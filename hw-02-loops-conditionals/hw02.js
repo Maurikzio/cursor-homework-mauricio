@@ -9,7 +9,6 @@ while(!Number.isInteger(m)){
 }
 
 let skipping = confirm('Do you wanna skip even numbers?');
-
 let result = 0;
 
 if(n > m){
@@ -24,15 +23,16 @@ document.writeln(`<p>Are we skipping even numbers? -> ${skipping}</p>`);
 for(let i=n; i<=m; i++){
     if(skipping){
         if(i%2 == 0) {
-            result += i;
+            continue;
         }
-        continue;
+        result += i;
     }else{
         result += i;
     }
 }
 
-document.writeln(`<p>The result sum of ${(skipping)? "even" : "the"} numbers between ${n} and ${m} is: ${result}</p>`)
+document.writeln(`<p>The result sum of ${(skipping)? "even" : "the"} numbers between ${n} and ${m} is: ${result}</p>`);
+
 console.log(`N; ${n} 
 M: ${m}
 skipping: ${skipping} 
