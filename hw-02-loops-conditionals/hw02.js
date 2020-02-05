@@ -1,9 +1,9 @@
-let n = +prompt("Type a value for N:", "10")
+let n = Number(prompt("Type a value for N:", "10"));
 while(!Number.isInteger(n)){
     n = +prompt("ERROR!, don't panic. \nThis time enter an INTEGER value for N", "10");
 }
 
-let m = +prompt("Type a value for M:", "100")
+let m = Number(prompt("Type a value for M:", "100"));
 while(!Number.isInteger(m)){
     m = +prompt("ERROR!, don't panic. \nThis time enter an INTEGER value for M", "100");
 }
