@@ -35,25 +35,25 @@ function countLetter(letter, word){
 }
 
 //7 - convert dollars to hryvnias and vice versa
+//accepted: '$/usd/uah100', '$/usd/uah100.5', '100$/usd/uah', '100.5', '$/usd/uah100', '$/usd/uah100.5', '100$/usd/uah', '100.5$/usd/uah'
 function convertCurrency(amount){
-    //the currency can be at the beginning or at the end, so with this we can remove that possibility
-    const justNumbers = Number(amount.replace(/\D/g,""));
-    const currency = amount.replace(/[0-9]/g, '');
+    amount = amount.toLowerCase() || '100usd';
     let result = '';
-    
-    switch(currency.toLowerCase()){
+    let digits = 0;
+
+    switch(amount.replace(/[0-9.]/g,'')){
         case 'uah':
-            result = `${justNumbers / 25} $`;
+            digits = amount.replace(/[a-z]/g, '');
+            result = `${digits / 25}$`;
             break;
-        case '$':
         case 'usd':
-            result = `${justNumbers * 25} UAH`;
-            break;
-        case '':
-            result = 'you need to add you amount with a currency like: 100usd, 100$, 100uah';
+        case '$':
+            digits = amount.replace(/[a-z$]/g, '');
+            result = `${digits * 25}uah`;
             break;
         default:
-            result = `WARNING!! currency: '${currency}' is not accepted!`
+            result = 'no currency accepted/inserted, try $, usd, uah';
+            break;
     }
     return result;
 }
