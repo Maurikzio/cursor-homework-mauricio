@@ -1,5 +1,5 @@
 /*
- * adding event-handlers for each button, kinda manual, for the next version it will be automated with js, promise!
+ * adding event-listners for each button, kinda manual, for the next version it will be automated with js, promise!
  */
 const func1 = document.getElementById("f1-btn");
 func1.addEventListener('click', function(){

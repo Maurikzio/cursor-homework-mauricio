@@ -19,7 +19,9 @@ function firstLetterUppercased(name){
 
 //4 - calculate the amount remaining after paying taxes
 function getTaxesPayment(amount){
-    return amount - (amount * 0.195);
+    //tax->19.5% --> 0.195
+    const tax = 19.5;
+    return amount - (amount * tax)/100;
 }
 
 //5 - get a random number between N(min) and M(max)
@@ -36,19 +38,19 @@ function countLetter(letter, word){
 
 //7 - convert dollars to hryvnias and vice versa
 //accepted: '$/usd/uah100', '$/usd/uah100.5', '100$/usd/uah', '100.5', '$/usd/uah100', '$/usd/uah100.5', '100$/usd/uah', '100.5$/usd/uah'
-function convertCurrency(amount){
-    amount = amount.toLowerCase() || '100usd';
+function convertCurrency(amount='100usd'){
+    const money = amount.toLowerCase();
     let result = '';
     let digits = 0;
 
-    switch(amount.replace(/[0-9.]/g,'')){
+    switch(money.replace(/[0-9.]/g,'')){
         case 'uah':
-            digits = amount.replace(/[a-z]/g, '');
+            digits = money.replace(/[a-z]/g, '');
             result = `${digits / 25}$`;
             break;
         case 'usd':
         case '$':
-            digits = amount.replace(/[a-z$]/g, '');
+            digits = money.replace(/[a-z$]/g, '');
             result = `${digits * 25}uah`;
             break;
         default:
@@ -68,7 +70,7 @@ function getRandomPassword(len = 8){
 function deleteLetters(letter, sentence){
     return (sentence.includes(letter)) 
             ? sentence.split('').filter(value => value !== letter).join('')
-            : `${letter} was not found`
+            : sentence;
 }
 
 //10 - check is a word is a palindrome one.
