@@ -38,7 +38,12 @@ const getModa = (...numbers) => {
 
 
 //3 getAverage(...numbers)
-const getAverage = (...numbers) => numbers.reduce((acc,num) => acc + num) / numbers.length;
+const getAverage = (...numbers) => {
+  // if(numbers.length === 0){
+  //   return 0;
+  // }
+  return numbers.reduce((acc,num) => acc + num) / numbers.length;
+}
 
 //4 getMedian(...numbers)
 const getMedian = (...numbers) => {
