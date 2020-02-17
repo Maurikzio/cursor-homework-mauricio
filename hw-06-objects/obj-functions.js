@@ -30,6 +30,7 @@ const students = [
   
   
  //1 get subjects
+ //ALTERNATIVE SOLUTION ----> ["Math", "Algorithms", "Data Science"]
 // const getSubjects = (student) => {
 //     const {subjects} = student;
 //     return Object.keys(subjects).map( subject => {
@@ -37,7 +38,7 @@ const students = [
 //             return sbj[0].toUpperCase() + sbj.slice(1)
 //         }).join(' ');
 //     });
-// }; ----> ["Math", "Algorithms", "Data Science"]
+// }; 
 
 const getSubjects = (student) => {
     const {subjects} = student;
@@ -46,7 +47,6 @@ const getSubjects = (student) => {
 }
 console.log('--- Subjects of a certain student ---');
 console.log(getSubjects(students[0]));
-console.log('');
 
 //2 get average marks
 const getAverage = (marks) => marks.reduce((acc,num) => acc + num) / marks.length;
@@ -57,7 +57,7 @@ const getAverageMark = (student) => {
 };
 console.log('--- Average mark of all subjects of a certain student ---');
 console.log(getAverageMark(students[0]));
-console.log('');
+
 
 //3 get student info
 const getStudentInfo = student => {
@@ -66,16 +66,15 @@ const getStudentInfo = student => {
 };
 console.log('--- Student info---');
 console.log(getStudentInfo(students[0]));
-console.log('');
+
 
 //4 students name in order;
 const getStudentsName = students => {
     //sort with no params sorts strings by default;
     return students.map(student => student.name).sort();
 };
-console.log('--- Student name in order---');
+console.log('--- Students name in order---');
 console.log(getStudentsName(students));
-console.log('');
 
 //5 get best student
 const getBestStudent = students => {
@@ -83,7 +82,7 @@ const getBestStudent = students => {
 };
 console.log('--- Best student with max average mark---');
 console.log(getBestStudent(students));
-console.log('');
+
 
 //6 calculate word letters
 const calculateWordLetters = word => {
