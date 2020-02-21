@@ -22,8 +22,7 @@ const itemLengthEqualTo = number =>{
 };
 
 const getModa = (...numbers) => {
-  const arrSorted = numbers.sort((a, b) => a - b);
-                      //.filter((val, _, array) => array.indexOf(val) !== array.lastIndexOf(val));
+  const arrSorted = numbers.sort((a, b) => a - b).filter(num => Number.isInteger(num));
   const someRepetition = arrSorted.some((el, _, array) => array.indexOf(el) !== array.lastIndexOf(el));
   
   if(!someRepetition) return null;
@@ -39,18 +38,15 @@ const getModa = (...numbers) => {
 
 //3 getAverage(...numbers)
 const getAverage = (...numbers) => {
-  // if(numbers.length === 0){
-  //   return 0;
-  // }
-  return numbers.reduce((acc,num) => acc + num) / numbers.length;
+  const justInts = numbers.filter(num => Number.isInteger(num));
+  return justInts.reduce((acc,num) => acc + num) / justInts.length;
 }
 
 //4 getMedian(...numbers)
 const getMedian = (...numbers) => {
-  const sortedArray = numbers.sort((prev, curr) => prev - curr);
+  const sortedArray = numbers.filter(num => Number.isInteger(num)).sort((prev, curr) => prev - curr);
   const midPoint = sortedArray.length / 2;
   const median = (sortedArray.length % 2 === 0) ? (sortedArray[midPoint-1] + sortedArray[midPoint]) / 2 : sortedArray[Math.floor(midPoint)];
-  
   return median;
 };
 
@@ -116,5 +112,3 @@ const generateCombinations = (word='man') => {
   }
   return [...combinations].map(comb => comb.split('').map(element => word[element]).join(''));
 };
-
-
