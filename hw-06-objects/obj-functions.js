@@ -42,8 +42,8 @@ const students = [
 
 const getSubjects = (student) => {
     const {subjects} = student;
-    const cased = Object.keys(subjects).map(subject => subject[0].toUpperCase() + subject.slice(1));
-    return cased.map(subject => subject.split('_').join(' '));
+    const casedUp = Object.keys(subjects).map(subject => subject[0].toUpperCase() + subject.slice(1).toLowerCase());
+    return casedUp.map(subject => subject.split('_').join(' '));
 }
 console.log('--- Subjects of a certain student ---');
 console.log(getSubjects(students[0]));

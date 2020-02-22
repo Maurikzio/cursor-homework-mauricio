@@ -9,32 +9,29 @@ const getRandomArray = (length, min, max) => {
 }
 
 //2 getModa(...numbers)
-const  chunkArray = theArray => {
-  let inChunks = [];
-  while (theArray.length) {
-    inChunks.push(theArray.splice(0, theArray.lastIndexOf(theArray[0]) + 1));
-  }
-  return inChunks;
+//[3, 3, 5, 5, 5]
+/*const inChunks = arr => {
+  const uniqs = Array.from(new Set(arr)); //[3, 5]
+  const chunks = uniqs.map(item => {
+    return arr.filter(element => element === item); //[3, 3]
+  });
+  return chunks; // [[3, 3], [5, 5, 5]]
+};*/
+const inChunks = arr => {
+  return Array.from(new Set(arr)).map(item => {
+    return arr.filter(element => element === item); 
+  });
 };
-
-const itemLengthEqualTo = number =>{
-  return item => item.length === number;
-};
-
 const getModa = (...numbers) => {
-  const arrSorted = numbers.sort((a, b) => a - b).filter(num => Number.isInteger(num));
-  const someRepetition = arrSorted.some((el, _, array) => array.indexOf(el) !== array.lastIndexOf(el));
-  
-  if(!someRepetition) return null;
-  
-  const allChunks = chunkArray(arrSorted.slice()); 
-  const maxLength = allChunks.reduce((acc, chunk) => acc.length > chunk.length ? acc : chunk, []).length;
-  const allChunksWithSameFreq = allChunks.every(itemLengthEqualTo(maxLength));
-  const chunksWithSameLength = allChunks.filter(itemLengthEqualTo(maxLength)).map(item => item[0]);
-
-  return allChunksWithSameFreq ? null : chunksWithSameLength;
+  const justInts = numbers.filter(num => Number.isInteger(num));
+  const justRepetitives = justInts.filter((num, _, arr) => arr.indexOf(num) !== arr.lastIndexOf(num));
+  if(justInts !== justRepetitives){
+    const chunks = inChunks(justRepetitives);
+    const maxLength = chunks.reduce((acc, curr) => acc.length > curr.length ? acc : curr, []).length;
+    return chunks.filter(chunk => chunk.length === maxLength).map(element => element[0]);
+  }
+  return null;
 };
-
 
 //3 getAverage(...numbers)
 const getAverage = (...numbers) => {
@@ -51,14 +48,10 @@ const getMedian = (...numbers) => {
 };
 
 //5 filterEvenNumbers(...numbers)
-const justOdds = number => number % 2 !== 0;
-const filterEvenNumbers = (...numbers) => numbers.filter(justOdds);
-
+const filterEvenNumbers = (...numbers) => numbers.filter(number => number%2 !== 0);
 
 //6 countPositiveNumbers(...numbers)
-const isPositive = number => number > 0;
-const countPositiveNumbers = (...numbers) => numbers.filter(isPositive).length;
-
+const countPositiveNumbers = (...numbers) => numbers.filter(number => number > 0).length;
 
 //7 getDividedByFive(...numbers)
 const divisibleBy = number => item => item % number == 0;
