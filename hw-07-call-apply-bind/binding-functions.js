@@ -6,21 +6,31 @@ const litva = { tax: 0.15, middleSalary: 1509, vacancies: 1114 };
 const getMyTaxes = function(salary) {
     return salary * this.tax;
 }
-console.log(`Task 1, get my taxes: ${getMyTaxes.call(ukraine, 10000)} `);
+console.log(`---Task 1, get my taxes:---`);
+console.log(`In Ukraine: ${getMyTaxes.call(ukraine, 10000)} `);
+console.log(`In Latvia: ${getMyTaxes.call(latvia, 20000)} `);
+console.log(`In Litvia: ${getMyTaxes.call(litva, 30000)} `);
+
 
 //2
 const getMiddletaxes = function(){
     return this.tax * this.middleSalary;
 };
-console.log(`Task 2, get middle taxes: ${getMiddletaxes.call(ukraine)}`);
+console.log(`---Task 2, get middle taxes:---`);
+console.log(`In Ukraine: ${getMiddletaxes.call(ukraine)}`);
+console.log(`In Latvia: ${getMiddletaxes.call(latvia)}`);
+console.log(`In Litvia: ${getMiddletaxes.call(litva)}`);
+
 
 //3
 const getTotalTaxes = function(){
     // return this.tax * this.middleSalary * this.vacancies; //4003459.98
     return Object.values(this).reduce((acc, cur) => acc * cur); //4003459.98
 };
-console.log(`Task 3, get total taxes: ${getTotalTaxes.call(ukraine)}`);
-
+console.log(`---Task 3, get total taxes:---`);
+console.log(`In Ukraine: ${getTotalTaxes.call(ukraine)}`);
+console.log(`In Latvia: ${getTotalTaxes.call(latvia)}`);
+console.log(`In Litvia: ${getTotalTaxes.call(ukraine)}`);
 
 //4
 const generateRandomSalary = (min, max) => {
@@ -40,5 +50,5 @@ const getMySalary = function(country){
         alert('auto-stop to dont waste your memory :) ')
     }, 300000)
 };
-console.log('Task 4 in few seconds...');
+console.log('Task 4, in few seconds...');
 getMySalary(ukraine);
