@@ -12,8 +12,6 @@ console.log(`Task 1, get my taxes: ${getMyTaxes.call(ukraine, 10000)} `);
 const getMiddletaxes = function(){
     return this.tax * this.middleSalary;
 };
-
-const middleTaxes = getMiddletaxes.call(litva);
 console.log(`Task 2, get middle taxes: ${getMiddletaxes.call(ukraine)}`);
 
 //3
