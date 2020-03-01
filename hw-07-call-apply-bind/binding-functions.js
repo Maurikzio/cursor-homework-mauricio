@@ -24,8 +24,7 @@ console.log(`In Litvia: ${getMiddletaxes.call(litva)}`);
 
 //3
 const getTotalTaxes = function(){
-    // return this.tax * this.middleSalary * this.vacancies; //4003459.98
-    return Object.values(this).reduce((acc, cur) => acc * cur); //4003459.98
+    return this.tax * this.middleSalary * this.vacancies; //4003459.98  
 };
 console.log(`---Task 3, get total taxes:---`);
 console.log(`In Ukraine: ${getTotalTaxes.call(ukraine)}`);
