@@ -1,0 +1,37 @@
+body{
+    /* background-color: #53917E; */
+    background-color: #ABE188;
+}
+.animals{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.key{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    border: white 1px dashed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.key p{
+    font-family: 'Coming Soon';
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.playing{
+    transition: all 1s;
+    border: red 1px solid;
+}
+img{
+    width: 60px;
+    margin: auto;
+}
+img:hover{
+    cursor: pointer;
+}
