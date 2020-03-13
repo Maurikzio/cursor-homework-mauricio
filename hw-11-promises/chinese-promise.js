@@ -1,16 +1,20 @@
 const result = document.getElementById('chineseChars');
 const getResults = document.getElementById('getChars');
 
+function getChineseChar(time, length){
+    return new Promise((resolve, _) => {
+        setTimeout(() => {
+            const sign = String(Date.now()).slice(-length);
+            return resolve(String.fromCharCode(sign));
+        }, time);
+    })
+}
+
 async function getRandomChinese(length){
     let chineseChars = "";
     while(chineseChars.length < length){
-        const myPromise = new Promise(function (resolve){
-            setTimeout(() => {
-                const sign = String(Date.now()).slice(-length);
-                resolve(String.fromCharCode(sign));
-            }, 50);
-        });
-        await myPromise.then(value => chineseChars += value);
+        await getChineseChar(50, length)
+                .then(character => chineseChars += character)
     }
     return chineseChars;
 }
