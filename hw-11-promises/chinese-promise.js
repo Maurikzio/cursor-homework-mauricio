@@ -13,8 +13,7 @@ function getChineseChar(time, length){
 async function getRandomChinese(length){
     let chineseChars = "";
     while(chineseChars.length < length){
-        await getChineseChar(50, length)
-                .then(character => chineseChars += character)
+        chineseChars += await getChineseChar(50, length);
     }
     return chineseChars;
 }
