@@ -66,9 +66,14 @@ btnGetCharacters.addEventListener('click', function(){
         next.disabled = true;
         previous.disabled = true;
         showCharacters.call(this, inputValue);
+        document.body.style.background = 'white';
+        titleHw.style.color = 'black';
+        planets.classList.remove('dark');
+        characters.classList.remove('dark');
     }else{
         alert('Please enter a valid id-film (1-7)');
     }
+    
 });
 
 
