@@ -87,5 +87,4 @@ function deleteDuplicateLetters(word){
     return lowerCased.split('').filter(value => lowerCased.indexOf(value) === lowerCased.lastIndexOf(value)).join('');
 }
 
-
-
+module.exports = { getRandomNumber }

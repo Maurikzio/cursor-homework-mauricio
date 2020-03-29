@@ -63,7 +63,7 @@ const replaceBadWords = sentence => {
   const badWords = ['fuck', 'shit'];
   const customRegExp = new RegExp(badWords.join('|'), 'gi');
   return sentence.split(customRegExp).join('****');
-};
+}
 
 //9 divideByThree(word)
 const divideByThree = word => {
@@ -104,4 +104,6 @@ const generateCombinations = (word='man') => {
     combinations.add(value);
   }
   return [...combinations].map(comb => comb.split('').map(element => word[element]).join(''));
-};
+}
+
+module.exports = { replaceBadWords };

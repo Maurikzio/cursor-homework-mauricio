@@ -16,19 +16,19 @@ class Color{
 const staticContainer = document.getElementById('static-container');
 const crazyContainer = document.getElementById('crazy-container');
 
-const setColor = function(identifier){
-    const blocks = document.getElementsByClassName(identifier);
-    [...blocks].forEach(element => {
-        const color = new Color()
-        element.style.backgroundColor = color.getColor();
-    });
-};
+// const setColor = function(identifier){
+//     const blocks = document.getElementsByClassName(identifier);
+//     [...blocks].forEach(element => {
+//         const color = new Color()
+//         element.style.backgroundColor = color.getColor();
+//     });
+// }
 
-const generateBlocks = function(){
-    staticContainer.innerHTML = `<div class='block'></div>`.repeat(25);
-    setColor('block');
-};
-generateBlocks();
+// const generateBlocks = function(){
+//     this.innerHTML = `<div class='block'></div>`.repeat(25);
+//     setColor('block');
+// };
+generateBlocks.call(staticContainer);
 
 const generateBlocksInterval = function(){
     crazyContainer.innerHTML = `<div class='crazy-block'></div>`.repeat(25);

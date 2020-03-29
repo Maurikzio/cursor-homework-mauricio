@@ -1,11 +1,11 @@
-const ukraine = { tax: 0.195, middleSalary: 1789, vacancies: 11476 };
-const latvia = { tax: 0.25, middleSalary: 1586, vacancies: 3921 };
-const litva = { tax: 0.15, middleSalary: 1509, vacancies: 1114 };
+// const ukraine = { tax: 0.195, middleSalary: 1789, vacancies: 11476 };
+// const latvia = { tax: 0.25, middleSalary: 1586, vacancies: 3921 };
+// const litva = { tax: 0.15, middleSalary: 1509, vacancies: 1114 };
 
 //1
-const getMyTaxes = function(salary) {
-    return salary * this.tax;
-}
+// const getMyTaxes = function(salary) {
+//     return salary * this.tax;
+// }
 console.log(`---Task 1, get my taxes:---`);
 console.log(`In Ukraine: ${getMyTaxes.call(ukraine, 10000)} `);
 console.log(`In Latvia: ${getMyTaxes.call(latvia, 20000)} `);

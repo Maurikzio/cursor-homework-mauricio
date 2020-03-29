@@ -79,3 +79,4 @@ document.writeln(finalCheck)
 document.getElementsByTagName('h4')[0].style.textAlign = "center";
 const container = document.getElementById('myContainer');
 [...container.children].map(item => item.style.textAlign = "center");
+

@@ -1,0 +1,46 @@
+button{
+    cursor: pointer;
+}
+.block{
+    height: 50px;
+    width: 50px;
+}
+#homeworkList{
+    display: flex;
+    justify-content: space-evenly;
+}
+#homeworkList button{
+    font-family: 'Roboto';
+}
+#homeworkList button{
+    /* background-color: #F86624;   
+    border: solid #FFD23F 1px;
+    color: white; */
+}
+#homeworkResult{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+}
+.chars-container{
+    /* background-color: orange; */
+    font-family: 'Roboto';
+    font-weight: 100;
+    border: white 1px solid;
+    padding: 5px;
+    width: 85px;
+    margin: 5px 10px;
+}
+.chars-container:hover{
+    border: grey 1px solid;
+    cursor: pointer;
+}
+
+.chars-container img{
+    width: 60px;
+}
+.chars-container p{
+    margin-top: 0px;
+}

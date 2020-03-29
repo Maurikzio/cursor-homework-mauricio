@@ -9,12 +9,12 @@ const size = document.getElementById('size');
 const currentSize = document.getElementById('current-size');
 
 //task1
-function *createIdGenerator(){
-    let id = 0;
-    while(true){
-        yield ++id;
-    }
-}
+// function *createIdGenerator(){
+//     let id = 0;
+//     while(true){
+//         yield ++id;
+//     }
+// }
 
 let idGenerator = createIdGenerator();
 
