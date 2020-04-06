@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/css/main.fd1e38b0.chunk.css",
+    "main.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/main.bd35c8cd.chunk.js",
+    "main.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/main.bd35c8cd.chunk.js.map",
+    "runtime-main.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/runtime-main.2a73e37f.js",
+    "runtime-main.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/runtime-main.2a73e37f.js.map",
+    "static/js/2.4d2f050b.chunk.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/2.4d2f050b.chunk.js",
+    "static/js/2.4d2f050b.chunk.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/2.4d2f050b.chunk.js.map",
+    "index.html": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/index.html",
+    "precache-manifest.081eea838199d4fa0a7afcf8e4bdcf11.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/precache-manifest.081eea838199d4fa0a7afcf8e4bdcf11.js",
+    "service-worker.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/service-worker.js",
+    "static/css/main.fd1e38b0.chunk.css.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/css/main.fd1e38b0.chunk.css.map",
+    "static/js/2.4d2f050b.chunk.js.LICENSE.txt": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/2.4d2f050b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a73e37f.js",
+    "static/js/2.4d2f050b.chunk.js",
+    "static/css/main.fd1e38b0.chunk.css",
+    "static/js/main.bd35c8cd.chunk.js"
+  ]
+}

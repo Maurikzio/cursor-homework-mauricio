@@ -1,0 +1,44 @@
+.postContent{
+    padding: 5px 10px;
+}
+/*post-header*/
+.postHeader{
+    /* border: 1px solid red; */
+    display: flex;
+    margin-bottom: 3px;
+}
+.postHeader p{
+    margin: 0;
+    padding-right: 15px;
+}
+.authorName{
+    font-weight: 800;
+}
+.authorNickname{
+    font-weight: 600;
+    color: rgb(117, 133, 146);
+    font-size: 16px;
+}
+.postDate{
+    color: rgb(117, 133, 146);
+}
+.postDate::before{
+    content: '\00B7';
+    margin-right: 5px;
+}
+
+/*post-body*/
+
+.postBody{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    /* background-color: orangered; */
+}
+.postBody p{
+    margin-top: 3px;
+}
+.postBody img{
+    width: 100%;
+    border-radius: 20px;
+}
