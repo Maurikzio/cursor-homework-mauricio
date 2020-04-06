@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/css/main.fd1e38b0.chunk.css",
-    "main.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/main.6ef4bf05.chunk.js",
-    "main.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/main.6ef4bf05.chunk.js.map",
-    "runtime-main.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/runtime-main.3127cd3e.js",
-    "runtime-main.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/runtime-main.3127cd3e.js.map",
-    "static/js/2.4d2f050b.chunk.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/2.4d2f050b.chunk.js",
-    "static/js/2.4d2f050b.chunk.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/2.4d2f050b.chunk.js.map",
-    "index.html": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/index.html",
-    "precache-manifest.36564303146fb530f4ed523d88cb7acf.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/precache-manifest.36564303146fb530f4ed523d88cb7acf.js",
-    "service-worker.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/service-worker.js",
-    "static/css/main.fd1e38b0.chunk.css.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/css/main.fd1e38b0.chunk.css.map",
-    "static/js/2.4d2f050b.chunk.js.LICENSE.txt": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/static/js/2.4d2f050b.chunk.js.LICENSE.txt"
+    "main.css": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/css/main.fd1e38b0.chunk.css",
+    "main.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/main.bd35c8cd.chunk.js",
+    "main.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/main.bd35c8cd.chunk.js.map",
+    "runtime-main.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/runtime-main.2a73e37f.js",
+    "runtime-main.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/runtime-main.2a73e37f.js.map",
+    "static/js/2.4d2f050b.chunk.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/2.4d2f050b.chunk.js",
+    "static/js/2.4d2f050b.chunk.js.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/2.4d2f050b.chunk.js.map",
+    "index.html": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/index.html",
+    "precache-manifest.081eea838199d4fa0a7afcf8e4bdcf11.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/precache-manifest.081eea838199d4fa0a7afcf8e4bdcf11.js",
+    "service-worker.js": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/service-worker.js",
+    "static/css/main.fd1e38b0.chunk.css.map": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/css/main.fd1e38b0.chunk.css.map",
+    "static/js/2.4d2f050b.chunk.js.LICENSE.txt": "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/build/static/js/2.4d2f050b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3127cd3e.js",
+    "static/js/runtime-main.2a73e37f.js",
     "static/js/2.4d2f050b.chunk.js",
     "static/css/main.fd1e38b0.chunk.css",
-    "static/js/main.6ef4bf05.chunk.js"
+    "static/js/main.bd35c8cd.chunk.js"
   ]
 }
