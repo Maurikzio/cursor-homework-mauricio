@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Maurikzio/cursor-homework-mauricio/precache-manifest.609f3296adb22491f95e6c2dd024b436.js"
+  "/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/precache-manifest.36564303146fb530f4ed523d88cb7acf.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Maurikzio/cursor-homework-mauricio/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Maurikzio/cursor-homework-mauricio/hw-15-react-basics/twitter/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
