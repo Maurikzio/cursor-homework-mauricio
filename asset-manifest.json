@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Maurikzio/cursor-homework-mauricio/static/css/main.fd1e38b0.chunk.css",
+    "main.js": "/Maurikzio/cursor-homework-mauricio/static/js/main.c8d43d66.chunk.js",
+    "main.js.map": "/Maurikzio/cursor-homework-mauricio/static/js/main.c8d43d66.chunk.js.map",
+    "runtime-main.js": "/Maurikzio/cursor-homework-mauricio/static/js/runtime-main.d794af8e.js",
+    "runtime-main.js.map": "/Maurikzio/cursor-homework-mauricio/static/js/runtime-main.d794af8e.js.map",
+    "static/js/2.4d2f050b.chunk.js": "/Maurikzio/cursor-homework-mauricio/static/js/2.4d2f050b.chunk.js",
+    "static/js/2.4d2f050b.chunk.js.map": "/Maurikzio/cursor-homework-mauricio/static/js/2.4d2f050b.chunk.js.map",
+    "index.html": "/Maurikzio/cursor-homework-mauricio/index.html",
+    "precache-manifest.609f3296adb22491f95e6c2dd024b436.js": "/Maurikzio/cursor-homework-mauricio/precache-manifest.609f3296adb22491f95e6c2dd024b436.js",
+    "service-worker.js": "/Maurikzio/cursor-homework-mauricio/service-worker.js",
+    "static/css/main.fd1e38b0.chunk.css.map": "/Maurikzio/cursor-homework-mauricio/static/css/main.fd1e38b0.chunk.css.map",
+    "static/js/2.4d2f050b.chunk.js.LICENSE.txt": "/Maurikzio/cursor-homework-mauricio/static/js/2.4d2f050b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d794af8e.js",
+    "static/js/2.4d2f050b.chunk.js",
+    "static/css/main.fd1e38b0.chunk.css",
+    "static/js/main.c8d43d66.chunk.js"
+  ]
+}
